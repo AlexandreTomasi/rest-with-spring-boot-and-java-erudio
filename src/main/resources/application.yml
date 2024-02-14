@@ -1,14 +1,9 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/new_database?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: admin123
-
+    url:
+    username:
+    password:
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform:
     hibernate:
-      ddl-auto: update
-    show-sql: false
+      ddl-auto: none
